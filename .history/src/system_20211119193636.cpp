@@ -34,8 +34,7 @@ string System::Kernel() {
 
 // DONE: Return the system's memory utilization
 float System::MemoryUtilization() {
-  // This implementation uses the formula from
-  // https://stackoverflow.com/questions/41224738/how-to-calculate-system-memory-usage-from-proc-meminfo-like-htop/41251290#41251290:
+  // This implementation uses the formula from https://stackoverflow.com/questions/41224738/how-to-calculate-system-memory-usage-from-proc-meminfo-like-htop/41251290#41251290:
   // Used Mem = (MemTotal-(MemFree + Buffers + Cached))/MemTotal <- not in
   // percentage as that is handled by ncurses_display.cpp
   // Cached=Cached + SReclaimable - Shmem

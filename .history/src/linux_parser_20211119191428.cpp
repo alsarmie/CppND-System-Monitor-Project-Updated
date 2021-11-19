@@ -192,7 +192,7 @@ void LinuxParser::CpuUtilization(float (&values)[10], int kCPU) {
   if (filestream.is_open()) {
     while (getline(filestream, line)) {
       if (line.find("cpu" + to_string(kCPU)) != std::string::npos) {
-        line = line.substr(3); // We discard the cpu tag .
+        line = line.substr(3);
         std::istringstream ss(line);
         ss >> values[CPUFields::kUser_] >> values[CPUFields::kNice_] >>
             values[CPUFields::kSystem_] >> values[CPUFields::kIdle_] >>
@@ -274,8 +274,7 @@ string LinuxParser::Ram(int pid) {
     filestream.close();
   }
   line = to_string(ram / 1000);
-  line =
-      line.substr(0, line.find(".") + 3);  // Truncate RAM value to 3 decimals
+  line = line.substr(0, line.find(".") + 3); // 
   return line;
 }
 

@@ -39,7 +39,7 @@ void NCursesDisplay::DisplaySystem(System& system, WINDOW* window) {
   mvwprintw(window, row, 17, "");
   wprintw(window, ProgressBar(system.Cpu().Utilization()).c_str());
   wattroff(window, COLOR_PAIR(1));
-  // Per-CPU core information.
+  //Per-CPU core information.
   for (int i = 0; i < system.Cpu().getCores(); i++) {
     mvwprintw(window, ++row, 2, ("  CPU" + std::to_string(i) + ":").c_str());
     wattron(window, COLOR_PAIR(3));

@@ -192,7 +192,7 @@ void LinuxParser::CpuUtilization(float (&values)[10], int kCPU) {
   if (filestream.is_open()) {
     while (getline(filestream, line)) {
       if (line.find("cpu" + to_string(kCPU)) != std::string::npos) {
-        line = line.substr(3); // We discard the cpu tag .
+        line = line.substr(3); // we discard the cpu tag .
         std::istringstream ss(line);
         ss >> values[CPUFields::kUser_] >> values[CPUFields::kNice_] >>
             values[CPUFields::kSystem_] >> values[CPUFields::kIdle_] >>

@@ -15,8 +15,7 @@ using std::vector;
 int Process::Pid() { return pid_; }
 
 // DONE: Return this process's CPU utilization
-float Process::CpuUtilization() {  //<- not in
-  // percentage as that is handled by ncurses_display.cpp
+float Process::CpuUtilization() {
   float total_time{0.0};
   float seconds{0.0};
   long sys_uptime{0};
@@ -27,8 +26,7 @@ float Process::CpuUtilization() {  //<- not in
   if (seconds > 0)
     cpu_utilization = (total_time / sysconf(_SC_CLK_TCK)) / seconds;
   else
-    cpu_utilization =
-        0.0;  // Maybe as a TODO in the future is to return a cached valued.
+    cpu_utilization = 0.0; // Maybe as a TODO is to 
   return cpu_utilization;
 }
 

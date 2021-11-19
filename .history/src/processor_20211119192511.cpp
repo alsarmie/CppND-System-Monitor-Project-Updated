@@ -10,8 +10,7 @@ https://stackoverflow.com/questions/23367857/accurate-calculation-of-cpu-usage-g
 
 */
 // DONE: Return the aggregate CPU utilization
-float Processor::Utilization() {  //<- not in
-  // percentage as that is handled by ncurses_display.cpp
+float Processor::Utilization() {//
   // This implentation could have used the Jiffies functions from LinuxParser
   // namespace, for sake of learning I opted for the following;
   float prev_idle_{0.0};
@@ -51,8 +50,7 @@ float Processor::Utilization() {  //<- not in
   return 0.0;
 }
 // DONE: Return per-CPU core utilization
-float Processor::Utilization(int kCore) {  //<- not in
-  // percentage as that is handled by ncurses_display.cpp
+float Processor::Utilization(int kCore) {
   float prev_idle_{0.0};
   float idle_{0.0};
   float prev_non_idle_{0.0};

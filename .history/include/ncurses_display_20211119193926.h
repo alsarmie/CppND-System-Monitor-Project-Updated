@@ -22,11 +22,9 @@ const char* const signature_logo[] = {
     ".        dMMMNh          hNMMMd        .   ",
     "+    hhhyNMMNy            yNMMMy       +   ",
     "o  yNMMMNyMMh              hmmmh       o           "
-    "Author: Alejandro  Sarmiento :=)",
-    "o  yNMMMNyMMh              hmmmh       o   Based on the starter code "
-    "provided by",
-    "+    hhhyNMMNy            yNMMMy       +    Udacity's System-Monitor "
-    "project.",
+    "Original Author: Udacity Alejandro  Sarmiento :=)",
+    "o  yNMMMNyMMh              hmmmh       o   ",
+    "+    hhhyNMMNy            yNMMMy       +   ",
     ".        dMMMNh          hNMMMd        .   ",
     " /        hNMMMyhhyyyyhdNMMMNh        /    ",
     "  +         dmydMMMMMMMMddddy        +     ",

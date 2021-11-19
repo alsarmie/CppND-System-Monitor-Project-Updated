@@ -26,7 +26,7 @@ const char* const signature_logo[] = {
     "o  yNMMMNyMMh              hmmmh       o   Based on the starter code "
     "provided by",
     "+    hhhyNMMNy            yNMMMy       +    Udacity's System-Monitor "
-    "project.",
+    "project",
     ".        dMMMNh          hNMMMd        .   ",
     " /        hNMMMyhhyyyyhdNMMMNh        /    ",
     "  +         dmydMMMMMMMMddddy        +     ",
